@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css?family=Nunito&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+header {
+  font-family: 'Montserrat', sans-serif , 'Dancing Script';
+  font-size: 3rem;
+  font-weight: 700;
+  text-align: center;
+  margin-top: 2rem;
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+
+body {
+  font-family: 'Nunito', sans-serif ,'Dancing Script'   ;
+  background: #777575;
+}
+
+
+/* #quote-box {
+  background: #fff;
+  width: 50rem;
+  margin: 3rem auto;
+  padding: 2.5rem;
+  border-radius: 5px;
+} */
+
+#text {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  
+}
+
+#author {
+  display: flex;
+  justify-content: flex-end;
+  font-size: 1.2rem;
+}
+
+#buttons {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 2rem;
+}
+
+.social-media {
+  display: flex;
+}
+
+.social-media > a {
+  margin-right: .5rem;
+  font-size: small;
+  background: #0059ff;
+  padding: 10px 10px;
+  cursor: pointer;
+  border-radius: 40px;
+}
+
+.social-media > a:hover {
+  opacity: .9;
+}
+
+.social-media > a img {
+  width: 1.5rem;
+}
+
+#new-quote {
+  background: #0059ff;
+  border: none;
+  color: #fff;
+  padding: .7rem 1rem;
+  font-size: .9rem;
+  font-weight: bold;
+  border-radius: 2px;
+  outline: none;
+  cursor: pointer;
+}
+
+#new-quote:hover {
+  opacity: 0.9;
+}
+
+.title {
+  margin: 0;
+  color: #000000;
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+}
+.quote-box {
+  background: #fff;
+  color: black;
+  width: 70rem;
+  margin: 3rem auto;
+  padding: 4rem;
+  border-radius: 5px;
+  border-radius: 20px;
+  
+}
+
+.light-theme {
+  background: #fff;
+  color: black;
+}
+
+.dark-theme {
+  background: #000000c7;
+  color: #fff;
+}
+
+.text-black {
+  color: black;
+}
+
+.text-white {
+  color: #fff;
+}
+
+.dark-theme .quote-box {
+  background: #000000;
+  color: #fff;
+}
+
+
+
+
+
+
+.btn-ripple {
+  position: relative;
+  overflow: hidden;
+}
+
+.btn-ripple::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 0;
+  height: 0;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  transition: width 0.3s ease-out, height 0.3s ease-out;
+}
+
+.btn-ripple:hover::after {
+  width: 300px;
+  height: 300px;
+}
